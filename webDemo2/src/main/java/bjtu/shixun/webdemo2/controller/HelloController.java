@@ -2,6 +2,7 @@ package bjtu.shixun.webdemo2.controller;
 
 ;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 
 /**
@@ -16,6 +17,9 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class HelloController {
 
-
+    @RequestMapping("/hello11")
+    public String hello(){
+        return "sssaDs";
+    }
 
 }
